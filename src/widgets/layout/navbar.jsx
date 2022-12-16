@@ -10,7 +10,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-export function Navbar({ brandName, routes, action }) {
+export function Navbar({ routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -64,8 +64,8 @@ export function Navbar({ brandName, routes, action }) {
     <MTNavbar color="transparent" className="p-3">
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
-            <Typography variant="h1" color="inherit" className="font-black">
-                Company Name
+            <Typography variant="h3" color="inherit" className="font-black">
+                TWIN BROTHERS CONSTRUCTION
             </Typography>
         </Link>
         <div className="hidden lg:block">{navList}</div>

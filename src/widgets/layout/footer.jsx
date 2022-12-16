@@ -32,7 +32,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
               ))}
             </div>
           </div>
-          <div className="mx-auto mt-12 grid w-max grid-cols-2 gap-24 lg:mt-0">
+          <div className="mx-auto mt-12 grid w-max grid-cols-1 gap-24 lg:mt-0">
             {menus.map(({ name, items }) => (
               <div key={name}>
                 <Typography
@@ -79,9 +79,9 @@ export function Footer({ title, description, socials, menus, copyright }) {
 }
 
 Footer.defaultProps = {
-  title: "Material Tailwind",
+  title: "Company Name",
   description:
-    "Easy to use React components for Tailwind CSS and Material Design.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   socials: [
     {
       color: "blue",
@@ -116,22 +116,7 @@ Footer.defaultProps = {
   ],
   menus: [
     {
-      name: "useful links",
-      items: [
-        { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-        { name: "Blog", path: "https://www.creative-tim.com/blog" },
-        {
-          name: "Github",
-          path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
-        },
-        {
-          name: "Free Products",
-          path: "https://www.creative-tim.com/templates/free?ref=mtk",
-        },
-      ],
-    },
-    {
-      name: "other resources",
+      name: "other links",
       items: [
         {
           name: "MIT License",
@@ -154,13 +139,13 @@ Footer.defaultProps = {
   ],
   copyright: (
     <>
-      Copyright © {year} Material Tailwind by{" "}
+      Copyright © {year} by{" "}
       <a
-        href="https://www.creative-tim.com?ref=mtk"
+        href="https://www.frontierresolution.com"
         target="_blank"
         className="text-blue-gray-500 transition-colors hover:text-blue-500"
       >
-        Creative Tim
+        Kyle Smigelski
       </a>
       .
     </>
